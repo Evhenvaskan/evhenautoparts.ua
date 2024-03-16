@@ -1,0 +1,529 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="8874213" data-tilda-page-id="45427311" data-tilda-page-alias="delivery" data-tilda-formskey="2b4b32a96e7f43d409567e2cc8874213" data-tilda-cookie="no" data-tilda-lazy="yes" ><div id="rec720041818" class="r t-rec" style=" " data-animationappear="off" data-record-type="257" ><!-- T228 --><div id="nav720041818marker"></div><div class="tmenu-mobile" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__text t-name t-name_md" field="menu_mob_title">AutoEugene Parts</div><button type="button" 
+class="t-menuburger t-menuburger_first " 
+aria-label="Навигационное меню" 
+aria-expanded="false"><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span></button><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger') &&
+!burger.closest('.t199__js__menu-toggler')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('720041818');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+padding: 0;
+border: none;
+background-color: transparent;
+outline: none;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: transform .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec720041818 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><style> #rec720041818 .tmenu-mobile__burgerlogo a { font-size: 28px; color: #000000; }</style><style> #rec720041818 .tmenu-mobile__burgerlogo__title { color: #000000; } @media screen and (min-width: 480px) { #rec720041818 .tmenu-mobile__burgerlogo__title { font-size: 28px; } }</style><div id="nav720041818" class="t228 t228__positionstatic tmenu-mobile__menucontent_hidden" style="background-color: rgba(255,255,255,1); height:100px; " data-bgcolor-hex="#ffffff" data-bgcolor-rgba="rgba(255,255,255,1)" data-navmarker="nav720041818marker" data-appearoffset="" data-bgopacity-two="" data-menushadow="" data-menushadow-css="" data-bgopacity="1" data-menu-items-align="right" data-menu="yes"><div class="t228__maincontainer " style="height:100px;"><div class="t228__padding40px"></div><div class="t228__leftside"><div class="t228__leftcontainer"><img class="t228__imglogo " 
+src="images/tild3866-3263-4438-a639-396232366462__photo_54404906855359.jpg" 
+imgfield="img"
+style="max-height: 80px" alt="AutoEugene Parts"
+></div></div><div class="t228__centerside t228__menualign_right"><nav class="t228__centercontainer"><ul role="list" class="t228__list t-menu__list"><li class="t228__list_item" 
+style="padding:0 15px 0 0;"><a class="t-menu__link-item" 
+href="/" data-menu-submenu-hook="" data-menu-item-number="1"
+>Головна</a></li><li class="t228__list_item" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="/pro-nas" data-menu-submenu-hook="" data-menu-item-number="2"
+>Про нас</a></li><li class="t228__list_item" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="/delivery" data-menu-submenu-hook="" data-menu-item-number="3"
+>Доставка</a></li><li class="t228__list_item" 
+style="padding:0 0 0 15px;"><a class="t-menu__link-item" 
+href="#contacts" data-menu-submenu-hook="" data-menu-item-number="4"
+>Контакти</a></li></ul></nav></div><div class="t228__rightside"><div class="t228__rightcontainer"><div class="t228__right_descr">+380 00 000 00 00</div><div class="t-sociallinks"><ul role="list" class="t-sociallinks__wrapper" aria-label="Соц. сети"><!-- new soclinks --><li class="t-sociallinks__item t-sociallinks__item_telegram"><a href="/AutoEugeneParts" target="_blank" rel="nofollow" aria-label="telegram" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#000000"/></svg></a></li><li class="t-sociallinks__item t-sociallinks__item_email"><a href="mailto:AutoEugeneParts@gmail.com?subject=Доброго дня! Хочу зробити замовлення:" target="_blank" rel="nofollow" aria-label="Электронная почта" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM51.8276 49.2076L74.191 33.6901C73.4347 32.6649 72.2183 32 70.8466 32H29.1534C27.8336 32 26.6576 32.6156 25.8968 33.5752L47.5881 49.172C48.8512 50.0802 50.5494 50.0945 51.8276 49.2076ZM75 63.6709V37.6286L53.4668 52.57C51.1883 54.151 48.1611 54.1256 45.9095 52.5066L25 37.4719V63.6709C25 65.9648 26.8595 67.8243 29.1534 67.8243H70.8466C73.1405 67.8243 75 65.9648 75 63.6709Z" fill="#000000"/></svg></a></li><!-- /new soclinks --></ul></div><div class="t228__right_langs"><div class="t228__right_buttons_wrap"><div class="t228__right_langs_lang"><a style="" href="https://project8874213.tilda.ws">UA</a></div></div></div></div></div><div class="t228__padding40px"></div></div></div><style>@media screen and (max-width: 980px) {
+#rec720041818 .t228 {
+position: static;
+}
+}</style><script>window.addEventListener('resize', t_throttle(function () {
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('720041818', '.t228');
+});
+}));
+t_onReady(function () {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t228__list_item a');
+});
+t_onFuncLoad('t228__init', function () {
+t228__init('720041818');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('720041818', '.t228');
+});
+t_onFuncLoad('t_menu__interactFromKeyboard', function () {
+t_menu__interactFromKeyboard('720041818');
+});
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('720041818', '.t228');
+});
+});</script><!--[if IE 8]><style>#rec720041818 .t228 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', endColorstr='#D9ffffff');
+}</style><![endif]--><style>#rec720041818 .t-menu__link-item{
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec720041818 .t-menu__link-item,
+#rec720041818 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style><style> #rec720041818 .t228__leftcontainer a { font-size: 28px; color: #000000; } #rec720041818 a.t-menu__link-item { font-size: 18px; color: #000000; font-weight: 400; } #rec720041818 .t228__right_langs_lang a { font-size: 18px; color: #000000; font-weight: 400; } #rec720041818 .t228__right_descr { font-size: 18px; }</style><style> #rec720041818 .t228__logo { color: #000000; } @media screen and (min-width: 480px) { #rec720041818 .t228__logo { font-size: 28px; } }</style></div><div id="rec720050935" class="r t-rec t-rec_pt_120 t-rec_pb_60" style="padding-top:120px;padding-bottom:60px;background-color:#efefef; " data-animationappear="off" data-record-type="902" data-bg-color="#efefef"><!-- t902 --><div class="t902"><div class="t-section__container t-container"><div class="t-col t-col_12"><div class="t-section__topwrapper t-align_center"><div class="t-section__title t-title t-title_xs" field="btitle">Швидка та надійна доставка</div> <div class="t-section__descr t-descr t-descr_xl t-margin_auto" field="bdescr">Зробіть своє замовлення ще зручнішим з нашою швидкою та надійною доставкою. Ми працюємо з провідними службами доставки, включаючи Нову пошту та Укрпошту, щоб забезпечити, що ваші товари дістануться до вас безпечно та вчасно.</div> </div></div></div><div class="t902__container t-card__container t-container"><div class="t-card__col t-col t-col_6 t902__col_first"><div class="t902__inner-col" style="background-color:#ffffff;"><div class="t902__wrap" ><div class="t902__wrap_left"><div class="t902__bgwrapper t902__bgwrapper_height" style="" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3532-3963-4233-b239-633866356465___2024-03-15_10234209.png"> <div class="t902__bgimg t-bgimg" data-original="images/tild3532-3963-4233-b239-633866356465___2024-03-15_10234209.png" 
+bgimgfield="li_img__4391279301140" 
+style="background-image:url('images/tild3532-3963-4233-b239-633866356465__-__resizeb__20x___2024-03-15_10234209.png');"
+></div></div></div><div class="t902__wrap_right"><div class="t902__content"><div class="t-card__title t-name t-name_md t902__bottommargin" field="li_title__4391279301140"><a 
+href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwiz9NCt3_WEAxXNSvEDHQDbAHAQFnoECAkQAQ&amp;url=https%3A%2F%2Fnovaposhta.ua%2F&amp;usg=AOvVaw0T812_jQfVN8Kgib5Qag1G&amp;opi=89978449" 
+class="t-card__link" 
+id="cardtitle1_720050935" 
+target="_blank" aria-labelledby="cardtitle1_720050935 cardbtn1_720050935" >Нова Пошта</a></div><div class="t-card__descr t-descr t-descr_xs" field="li_descr__4391279301140">Весь спектр логістичних послуг, швидка та надійна доставка документів, кореспонденції та листів по Україні.</div><div class="t902__btn-container t902__btn-container_topmargin"><div class="t-card__btn-wrapper"><div 
+class="t-card__btn t-btn t-btn_xs" 
+id="cardbtn1_720050935" 
+style="color:#ffffff;background-color:#000000;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;" data-field="li_buttontitle__4391279301140"
+aria-hidden="true" data-buttonfieldset="li_button" data-lid="4391279301140"
+>На сайт</div></div></div></div></div></div></div></div><div class="t-card__col t-col t-col_6 "><div class="t902__inner-col" style="background-color:#ffffff;"><div class="t902__wrap" ><div class="t902__wrap_left"><div class="t902__bgwrapper t902__bgwrapper_height" style="" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3734-6531-4438-a139-396266386135___2024-03-15_10244976.png"> <div class="t902__bgimg t-bgimg" data-original="images/tild3734-6531-4438-a139-396266386135___2024-03-15_10244976.png" 
+bgimgfield="li_img__4391279301141" 
+style="background-image:url('images/tild3734-6531-4438-a139-396266386135__-__resizeb__20x___2024-03-15_10244976.png');"
+></div></div></div><div class="t902__wrap_right"><div class="t902__content"><div class="t-card__title t-name t-name_md t902__bottommargin" field="li_title__4391279301141"><a 
+href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjL6_G43_WEAxWOVPEDHQ99DJEQFnoECAgQAQ&amp;url=https%3A%2F%2Fwww.ukrposhta.ua%2Fua&amp;usg=AOvVaw0imDzs_oSjs5J6hut_DkxE&amp;opi=89978449" 
+class="t-card__link" 
+id="cardtitle2_720050935" 
+target="_blank" aria-labelledby="cardtitle2_720050935 cardbtn2_720050935" >Укр-Пошта</a></div><div class="t-card__descr t-descr t-descr_xs" field="li_descr__4391279301141">Національний оператор поштового зв'язку. Повний спектр якісних і доступних по вартості поштово-логістичних і фінансових послуг.</div><div class="t902__btn-container t902__btn-container_topmargin"><div class="t-card__btn-wrapper"><div 
+class="t-card__btn t-btn t-btn_xs" 
+id="cardbtn2_720050935" 
+style="color:#ffffff;background-color:#000000;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;" data-field="li_buttontitle__4391279301141"
+aria-hidden="true" data-buttonfieldset="li_button" data-lid="4391279301141"
+>На сайт</div></div></div></div></div></div></div></div><div class="t902__separator" style=""></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t902_init', function () {
+t902_init('720050935');
+});
+});</script></div><div id="rec720041820" class="r t-rec t-rec_pt_45 t-rec_pb_45" style="padding-top:45px;padding-bottom:45px; " data-record-type="50" ><!-- T038 --><div class="t038"><div class="t-container"><div class="t-row"><div class="t-col t-col_8 t-prefix_2"><div class="t038__text-impact t-text-impact t-text-impact_sm" field="text">Автозапчастини, що забезпечують безпеку та надійність для твого автомобіля.</div></div></div></div></div></div><div id="rec720041823" class="r t-rec t-rec_pt_90 t-rec_pb_120" style="padding-top:90px;padding-bottom:120px;background-color:#f5f5f5; " data-animationappear="off" data-record-type="494" data-bg-color="#f5f5f5"><!-- t494--><div class="t494"><div class="t-container"><div class="t-col t-col_6 t-prefix_3 t-align_center"> <div class="t-sociallinks"><ul role="list" class="t-sociallinks__wrapper" aria-label="Social media links"><!-- new soclinks --><li class="t-sociallinks__item t-sociallinks__item_telegram"><a href="/AutoEugeneParts" target="_blank" rel="nofollow" aria-label="telegram" style="width: 48px; height: 48px;"><svg class="t-sociallinks__svg" role="presentation" width=48px height=48px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#000000"/></svg></a></li><li class="t-sociallinks__item t-sociallinks__item_email"><a href="mailto:AutoEugeneParts@gmail.com?subject=Доброго дня! Хочу зробити замовлення!" target="_blank" rel="nofollow" aria-label="Электронная почта" style="width: 48px; height: 48px;"><svg class="t-sociallinks__svg" role="presentation" width=48px height=48px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM51.8276 49.2076L74.191 33.6901C73.4347 32.6649 72.2183 32 70.8466 32H29.1534C27.8336 32 26.6576 32.6156 25.8968 33.5752L47.5881 49.172C48.8512 50.0802 50.5494 50.0945 51.8276 49.2076ZM75 63.6709V37.6286L53.4668 52.57C51.1883 54.151 48.1611 54.1256 45.9095 52.5066L25 37.4719V63.6709C25 65.9648 26.8595 67.8243 29.1534 67.8243H70.8466C73.1405 67.8243 75 65.9648 75 63.6709Z" fill="#000000"/></svg></a></li><!-- /new soclinks --></ul></div><div class="t494__text t-heading t-heading_xs t494__text-bottom-margin" field="text">Слідкуйте за нами в соціальних мережах і завітайте до нас!</div><div class="t494__text t-text t-text_sm" field="text2">Чернівці, Герцена, 93<br />Телефон: +380 00 000 00 00</div></div></div></div><style> #rec720041823 .t494__text.t-heading { color: #000000; } #rec720041823 .t494__text.t-text { color: #808080; }</style></div><div id="rec720041824" class="r t-rec" style=" " data-animationappear="off" data-record-type="706" ><!--tcart--><!-- @classes: t-text t-text_xs t-name t-name_xs t-name_md t-btn t-btn_sm --><script>t_onReady(function () {
+setTimeout(function () {
+t_onFuncLoad('tcart__init', function () {
+tcart__init('720041824');
+});
+}, 50);
+var userAgent = navigator.userAgent.toLowerCase();
+var body = document.body;
+if (!body) return;
+/* fix Instagram iPhone keyboard bug */
+if (userAgent.indexOf('instagram') !== -1 && userAgent.indexOf('iphone') !== -1) {
+body.style.position = 'relative';
+}
+var rec = document.querySelector('#rec720041824');
+if (!rec) return;
+var cartWindow = rec.querySelector('.t706__cartwin,.t706__cartpage');
+var allRecords = document.querySelector('.t-records');
+var currentMode = allRecords.getAttribute('data-tilda-mode');
+if (cartWindow && currentMode !== 'edit' && currentMode !== 'preview') {
+cartWindow.addEventListener(
+'scroll',
+t_throttle(function () {
+if (window.lazy === 'y' || document.querySelector('#allrecords').getAttribute('data-tilda-lazy') === 'yes') {
+t_onFuncLoad('t_lazyload_update', function () {
+t_lazyload_update();
+});
+}
+}, 500)
+);
+}
+});</script><div class="t706" data-cart-countdown="yes" data-opencart-onorder="yes" data-project-currency="грн." data-project-currency-side="r" data-project-currency-sep="," data-project-currency-code="UAH" ><div class="t706__carticon" style=""><div class="t706__carticon-text t-name t-name_xs"></div> <div class="t706__carticon-wrapper"><div class="t706__carticon-imgwrap" ><svg role="img" class="t706__carticon-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path fill="none" stroke-width="2" stroke-miterlimit="10" d="M44 18h10v45H10V18h10z"/><path fill="none" stroke-width="2" stroke-miterlimit="10" d="M22 24V11c0-5.523 4.477-10 10-10s10 4.477 10 10v13"/></svg></div><div class="t706__carticon-counter js-carticon-counter"></div></div></div><div class="t706__cartwin" style="display: none;"><div class="t706__close t706__cartwin-close"><button type="button" class="t706__close-button t706__cartwin-close-wrapper" aria-label="Закрыть корзину"><svg role="presentation" class="t706__close-icon t706__cartwin-close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd"><rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect><rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect></g></svg> </button> </div><div class="t706__cartwin-content"><div class="t706__cartwin-top"><div class="t706__cartwin-heading t-name t-name_xl"></div></div> <div class="t706__cartwin-products"></div><div class="t706__cartwin-bottom"><div class="t706__cartwin-prodamount-wrap t-descr t-descr_sm"><span class="t706__cartwin-prodamount-label"></span><span class="t706__cartwin-prodamount"></span></div></div> <div class="t706__orderform "> <form 
+id="form720041824" name='form720041824' role="form" action='' method='POST' data-formactiontype="0" data-inputbox=".t-input-group" 
+class="t-form js-form-proccess t-form_inputs-total_3 " data-formsended-callback="t706_onSuccessCallback" ><!-- NO ONE SERVICES CONNECTED --> <input type="hidden" name="tildaspec-formname" tabindex="-1" value="Cart"><div class="js-successbox t-form__successbox t-text t-text_md" 
+aria-live="polite" 
+style="display:none;"
+></div><div class="t-form__inputsbox t-form__inputsbox_inrow"><div 
+class="t-input-group t-input-group_nm " data-input-lid="1496239431201" data-field-type="nm"
+><label for='input_1496239431201' class="t-input-title t-descr t-descr_md" id="field-title_1496239431201" data-redactor-toolbar="no" field="li_title__1496239431201" style="color:;">Your Name</label><div class="t-input-block "><input type="text"
+autocomplete="name"
+name="Name"
+id="input_1496239431201"
+class="t-input js-tilda-rule "
+value="" data-tilda-req="1" aria-required="true" data-tilda-rule="name"
+aria-describedby="error_1496239431201"
+style="color:#000000;border:1px solid #000000;"><div class="t-input-error" aria-live="polite" id="error_1496239431201"></div></div></div><div 
+class="t-input-group t-input-group_em " data-input-lid="1496239459190" data-field-type="em"
+><label for='input_1496239459190' class="t-input-title t-descr t-descr_md" id="field-title_1496239459190" data-redactor-toolbar="no" field="li_title__1496239459190" style="color:;">Your Email</label><div class="t-input-block "><input type="email" 
+autocomplete="email" 
+name="Email" 
+id="input_1496239459190" 
+class="t-input js-tilda-rule " 
+value="" data-tilda-req="1" aria-required="true" data-tilda-rule="email" 
+aria-describedby="error_1496239459190" 
+style="color:#000000;border:1px solid #000000;"
+><div class="t-input-error" aria-live="polite" id="error_1496239459190"></div></div></div><div 
+class="t-input-group t-input-group_ph " data-input-lid="1496239478607" data-field-type="ph"
+><label for='input_1496239478607' class="t-input-title t-descr t-descr_md" id="field-title_1496239478607" data-redactor-toolbar="no" field="li_title__1496239478607" style="color:;">Your Phone</label><div class="t-input-block "><input type="tel"
+autocomplete="tel"
+name="Phone"
+id="input_1496239478607"
+class="t-input js-tilda-rule "
+value="" data-tilda-req="1" aria-required="true" data-tilda-rule="phone"
+pattern="[0-9]*"
+aria-describedby="error_1496239478607"
+style="color:#000000;border:1px solid #000000;"><div class="t-input-error" aria-live="polite" id="error_1496239478607"></div></div></div><div class="t-form__errorbox-middle"><!--noindex--><div 
+class="js-errorbox-all t-form__errorbox-wrapper" 
+style="display:none;" data-nosnippet 
+tabindex="-1" 
+aria-label="Ошибки при заполнении формы"
+><ul 
+role="list" 
+class="t-form__errorbox-text t-text t-text_md"
+><li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li></ul></div><!--/noindex--> </div><div class="t-form__submit"><button
+type="submit"
+class="t-submit"
+style="color:#ffffff;background-color:#000000;" data-field="buttontitle" data-buttonfieldset="button"
+>Checkout </button></div></div><div class="t-form__errorbox-bottom"><!--noindex--><div 
+class="js-errorbox-all t-form__errorbox-wrapper" 
+style="display:none;" data-nosnippet 
+tabindex="-1" 
+aria-label="Ошибки при заполнении формы"
+><ul 
+role="list" 
+class="t-form__errorbox-text t-text t-text_md"
+><li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li><li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li></ul></div><!--/noindex--> </div></form><style>#rec720041824 input::-webkit-input-placeholder {color:#000000; opacity: 0.5;}
+#rec720041824 input::-moz-placeholder {color:#000000; opacity: 0.5;}
+#rec720041824 input:-moz-placeholder {color:#000000; opacity: 0.5;}
+#rec720041824 input:-ms-input-placeholder {color:#000000; opacity: 0.5;}
+#rec720041824 textarea::-webkit-input-placeholder {color:#000000; opacity: 0.5;}
+#rec720041824 textarea::-moz-placeholder {color:#000000; opacity: 0.5;}
+#rec720041824 textarea:-moz-placeholder {color:#000000; opacity: 0.5;}
+#rec720041824 textarea:-ms-input-placeholder {color:#000000; opacity: 0.5;}</style></div></div> </div><div class="t706__cartdata"></div></div><style></style><!--/tcart--></div></div><!--/allrecords-->

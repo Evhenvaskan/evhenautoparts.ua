@@ -1,0 +1,415 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="8874213" data-tilda-page-id="45441055" data-tilda-formskey="2b4b32a96e7f43d409567e2cc8874213" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-project-lang="UK" ><div id="rec720158583" class="r t-rec" style=" " data-animationappear="off" data-record-type="257" ><!-- T228 --><div id="nav720158583marker"></div><div class="tmenu-mobile" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__text t-name t-name_md" field="menu_mob_title">AutoEugene Parts</div><button type="button" 
+class="t-menuburger t-menuburger_first " 
+aria-label="Navigation menu" 
+aria-expanded="false"><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span></button><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger') &&
+!burger.closest('.t199__js__menu-toggler')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('720158583');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+padding: 0;
+border: none;
+background-color: transparent;
+outline: none;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: transform .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec720158583 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><style> #rec720158583 .tmenu-mobile__burgerlogo a { font-size: 28px; color: #000000; }</style><style> #rec720158583 .tmenu-mobile__burgerlogo__title { color: #000000; } @media screen and (min-width: 480px) { #rec720158583 .tmenu-mobile__burgerlogo__title { font-size: 28px; } }</style><div id="nav720158583" class="t228 t228__positionstatic tmenu-mobile__menucontent_hidden" style="background-color: rgba(255,255,255,1); height:100px; " data-bgcolor-hex="#ffffff" data-bgcolor-rgba="rgba(255,255,255,1)" data-navmarker="nav720158583marker" data-appearoffset="" data-bgopacity-two="" data-menushadow="" data-menushadow-css="" data-bgopacity="1" data-menu-items-align="right" data-menu="yes"><div class="t228__maincontainer " style="height:100px;"><div class="t228__padding40px"></div><div class="t228__leftside"><div class="t228__leftcontainer"><img class="t228__imglogo " 
+src="images/tild3866-3263-4438-a639-396232366462__photo_54404906855359.jpg" 
+imgfield="img"
+style="max-height: 80px" alt="AutoEugene Parts"
+></div></div><div class="t228__centerside t228__menualign_right"><nav class="t228__centercontainer"><ul role="list" class="t228__list t-menu__list"><li class="t228__list_item" 
+style="padding:0 15px 0 0;"><a class="t-menu__link-item" 
+href="/" data-menu-submenu-hook="" data-menu-item-number="1"
+>Каталог</a></li><li class="t228__list_item" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="/pro-nas" data-menu-submenu-hook="" data-menu-item-number="2"
+>Про нас</a></li><li class="t228__list_item" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="/delivery" data-menu-submenu-hook="" data-menu-item-number="3"
+>Доставка</a></li><li class="t228__list_item" 
+style="padding:0 0 0 15px;"><a class="t-menu__link-item" 
+href="/pro-nas" data-menu-submenu-hook="" data-menu-item-number="4"
+>Контакти</a></li></ul></nav></div><div class="t228__rightside"><div class="t228__rightcontainer"><div class="t228__right_descr">+380 50 143 43 16</div><div class="t-sociallinks"><ul role="list" class="t-sociallinks__wrapper" aria-label="Social media links"><!-- new soclinks --><li class="t-sociallinks__item t-sociallinks__item_telegram"><a href="/AutoEugeneParts" target="_blank" rel="nofollow" aria-label="telegram" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#000000"/></svg></a></li><li class="t-sociallinks__item t-sociallinks__item_email"><a href="mailto:AutoEugeneParts@gmail.com?subject=Доброго дня! Хочу зробити замовлення:" target="_blank" rel="nofollow" aria-label="email" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM51.8276 49.2076L74.191 33.6901C73.4347 32.6649 72.2183 32 70.8466 32H29.1534C27.8336 32 26.6576 32.6156 25.8968 33.5752L47.5881 49.172C48.8512 50.0802 50.5494 50.0945 51.8276 49.2076ZM75 63.6709V37.6286L53.4668 52.57C51.1883 54.151 48.1611 54.1256 45.9095 52.5066L25 37.4719V63.6709C25 65.9648 26.8595 67.8243 29.1534 67.8243H70.8466C73.1405 67.8243 75 65.9648 75 63.6709Z" fill="#000000"/></svg></a></li><!-- /new soclinks --></ul></div><div class="t228__right_langs"><div class="t228__right_buttons_wrap"><div class="t228__right_langs_lang"><a style="" href="https://project8874213.tilda.ws">UA</a></div></div></div></div></div><div class="t228__padding40px"></div></div></div><style>@media screen and (max-width: 980px) {
+#rec720158583 .t228 {
+position: static;
+}
+}</style><script>window.addEventListener('resize', t_throttle(function () {
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('720158583', '.t228');
+});
+}));
+t_onReady(function () {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t228__list_item a');
+});
+t_onFuncLoad('t228__init', function () {
+t228__init('720158583');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('720158583', '.t228');
+});
+t_onFuncLoad('t_menu__interactFromKeyboard', function () {
+t_menu__interactFromKeyboard('720158583');
+});
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('720158583', '.t228');
+});
+});</script><!--[if IE 8]><style>#rec720158583 .t228 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', endColorstr='#D9ffffff');
+}</style><![endif]--><style>#rec720158583 .t-menu__link-item{
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec720158583 .t-menu__link-item,
+#rec720158583 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style><style> #rec720158583 .t228__leftcontainer a { font-size: 28px; color: #000000; } #rec720158583 a.t-menu__link-item { font-size: 18px; color: #000000; font-weight: 400; } #rec720158583 .t228__right_langs_lang a { font-size: 18px; color: #000000; font-weight: 400; } #rec720158583 .t228__right_descr { font-size: 18px; }</style><style> #rec720158583 .t228__logo { color: #000000; } @media screen and (min-width: 480px) { #rec720158583 .t228__logo { font-size: 28px; } }</style></div><div id="rec720160424" class="r t-rec" style=" " data-animationappear="off" data-record-type="338" ><!-- cover --><div class="t-cover" id="recorddiv720160424"bgimgfield="img"style="height:100vh;background-image:url('images/tild3563-3536-4361-b939-316666363232__-__resize__20x__1581099611064.jpeg');"><div class="t-cover__carrier" id="coverCarry720160424"data-content-cover-id="720160424"data-content-cover-bg="images/tild3563-3536-4361-b939-316666363232__1581099611064.jpeg"data-display-changed="true"data-content-cover-height="100vh"data-content-cover-parallax=""style="height:100vh;background-attachment:scroll; "itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3563-3536-4361-b939-316666363232__1581099611064.jpeg"></div><div class="t-cover__filter" style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.70));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.70));background-image: -o-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.70));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.70));background-image: linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.70));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66000000', endColorstr='#4c000000');"></div><div class="t338"><div class="t-container"><div class="t-col t-col_8 t-prefix_2"><div class="t-cover__wrapper t-valign_middle" style="height:100vh; position: relative;z-index: 1;"><div class="t338 t-align_center" style=""><div data-hook-content="covercontent"><div class="t339__wrapper"><div class="t339__blocklogo"><img class="t338__logo t-img" 
+imgfield="img2" 
+src="images/tild3265-6236-4132-a264-376132396631__-__empty__photo_54404906855359.jpg" data-original="images/tild3265-6236-4132-a264-376132396631__photo_54404906855359.jpg" data-tu-max-width="800" data-tu-max-height="800" 
+style="" data-hook-clogo="coverlogo" 
+alt=""></div><div class="t338__title t-title t-title_xxs" field="title">404 - Сторінка не знайдена<br />Хмм ... Схоже, ми знаходимося на неіснуючій хвилі. Цієї сторінки тут немає.<br />Можливо, ви вперлися на віртуальну стіну або сторінка вирушила у віртуальну подорож.<br />Перейдіть на головну сторінку, щоб знайти те, що вам потрібно.<br /><br /></div><div class="t338__buttonwrapper t-btnwrapper" ><a href="/" target="" class="t338__btn t-btn t-btn_md " style="color:#000000;background-color:#fff700;" data-buttonfieldset="button"
+><table role="presentation" style="width:100%; height:100%;"><tr><td data-field="buttontitle">Повернутися на головну сторінку</td></tr></table></a></div></div></div></div></div></div></div></div></div></div></div><!--/allrecords-->
